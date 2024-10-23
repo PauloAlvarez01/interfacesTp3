@@ -676,7 +676,7 @@ a.colorblanco{
 }
 
 .sub-container {
-    width: 99%;
+    width: 90%;
     height: auto;
     background-size: cover;
     display: flex;
@@ -685,7 +685,7 @@ a.colorblanco{
 }
 
 .sub-sub-container {
-    width: 95%;
+    width: 90%;
 }
 
 
@@ -795,50 +795,88 @@ li:hover {
 }
 
 .info-game {
-    margin-top: 10px;
+    margin-top: 2em;
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 2em;
     width: 100%;
     background-color: #271010;
 }
 
 .deQueTrata {
-    text-align: left;
-    width: 95%;
+    text-align: center;
+    padding-top: 2em;
+    width: 92%;
 }
 
 .descripcion {
-    padding-top: 10px;
+    padding-top: 2em;
 }
 
-.descripcion ol {
-    list-style-position: inside;
+.descripcion p {
     display: inline-block;
     width: 100%;
-    font-size: 12px;
+    font-size: 1.125em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    color: white;
+    color: var(--blanco);
 }
 
-.deQueTrata h3 {
-    font-family: Roboto;
-    font-size: 8px;
+.deQueTrata h1 {
+    font-family: Poppins;
+    font-size: 2rem;
     font-style: normal;
+    font-weight: 400;
     line-height: normal;
-    color: white;
+    color: var(--blanco);
 }
 
 .deQueTrata .imgsGame {
     display: flex;
-    margin-top: 10px;
+    margin-top: 2.5em;
     width: 100%;
     justify-content: space-between;
 
+}
+
+.imgsGameJuego {
+    margin-top: 10px;
+    width: 60em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgsGameJuego img {
+    width: 23%;
+    height: 12.63019em;
+}
+.videosJuego {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videosJuego video {
+    width: 45%;
+    height: 19.79169em;
+}
+
+.MomentosIncreiblesJuego {
+    margin-top: 5em;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.MomentosIncreiblesJuego h1 {
+    font-family: Roboto;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--blanco);
 }
 
 
