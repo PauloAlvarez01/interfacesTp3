@@ -742,7 +742,7 @@ a.colorblanco{
 .main-game-container {
     width: 100%;
     height: auto;
-    background-image: url(../imgs/main.png);  
+    background-color: #261818;  
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -754,8 +754,7 @@ a.colorblanco{
     background-size: cover;
     display: flex;
     justify-content: center;
-    background-color: #3f4442; /* esclarecer imagen de espacio*/
-    background-image: url(../imgs/mainOpacity.png); 
+    background-color: #261818; /* esclarecer imagen de espacio*/
 }
 
 .sub-sub-container {
@@ -2556,7 +2555,7 @@ button {
 
 .juegoColocado {
     width: 100%;
-    background-color: #00203E;
+    background-color: #261818;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -2670,7 +2669,7 @@ button {
 
 
 .elegirpersonajes{
-    background-image: url('../imgs/MIBfondo/fondoespacialimg.webp');
+    background-color: #261818;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -2682,12 +2681,12 @@ button {
 }
 
 .tablerojuego{
-    background-image: url('../imgs/MIBfondo/fondoespacialimg.webp');
+    background-color: #271010;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 32em;
-    margin-top:200px;
+    height: 30em;
+    margin-top:100px;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -2746,6 +2745,26 @@ button {
 .imgfichas {
     margin: 0 2em; /* Añade espacio entre las imágenes */
 }
+.imgfichas img {
+    border-radius: 50%;
+    
+}
+.img4enlinea{
+ display: flex;
+ justify-content: space-between;
+ padding-left: 15px;
+ padding-right: 15px;
+ flex-direction: column;
+ padding-top: 10px;
+    
+}
+.img4enlinea img{
+display: flex;
+ width: 150px;   
+ height: 150px;
+ justify-content: space-between;
+    
+}
 
 .elegirtableros {
     width: 90%;
@@ -2776,7 +2795,7 @@ button {
     margin-top: 3.2em;
 }
 .contenedortitulo{
-    width: 50%;
+    width: 100%;
 }
 .divflex {
     width: 100%;
@@ -2788,9 +2807,8 @@ button {
 
 .divbackground {
     display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);  
-    height: 32em;
+    flex-direction: column; 
+    height: 40em;
     justify-content: center;
     align-items: center;
     margin-bottom: 1em;
@@ -2804,15 +2822,15 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 12em; 
+    margin-left: 6em; 
+    height: 450px;
 
 }
 .divFormMinutos {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
     margin-top: 1em;
     margin-bottom: 8em;
 }
@@ -2837,7 +2855,6 @@ button {
 
 .resaltado{
     color: white;
-    text-shadow: 1px 1px 2px var(--acento-luz), 0 0 1em var(--acento), 0 0 0.2em var(--prim-luz2);
 }
 .btnpausar{
     display: flex;

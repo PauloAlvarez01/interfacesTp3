@@ -3152,14 +3152,16 @@ background-color: #A12831;
     height: 100px;
 }
 
+
 .juegoColocado {
     width: 100%;
-    background-color: #00203E;
+    background-color: #261818;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: auto;
 }
+
 
 .imgfondo {
     width: 100%;
@@ -3173,7 +3175,7 @@ background-color: #A12831;
 .timer {
     margin-top: 8em;
     height: 2.40em;
-    background-color: var(--prim-sombra3);
+    background-color: var(--acento);
     width: 24em;
     text-align: center;
     justify-content: space-evenly;
@@ -3183,7 +3185,7 @@ background-color: #A12831;
     position: absolute;
     top: -10.5em;
     right: 15.5em;
-    box-shadow: 1px 0px 5px var(--prim-sombra3);
+    box-shadow: 1px 0px 5px var(--acento-luz);
 }
 .timer p {
     font-size: 28px;
@@ -3191,8 +3193,7 @@ background-color: #A12831;
     display: inline-block; /*se ajusta al contenido del parrafo*/
     width: 4em;
     height: 2.30rem;
-    background-color: var(--prim-luz3);
-    border: solid 3px var(--prim-sombra3);
+    background-color: var(--acento-luz);
     border-radius: 6px;
 }
 
@@ -3201,10 +3202,9 @@ background-color: #A12831;
     align-items: center;
     width: 9em;
     height: 2.30rem;
-    background-color: var(--prim-luz3);
+    background-color: var(--acento-luz);
     color: var(--blanco);
-    border: solid 3px var(--prim-sombra3);
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
 .resetButton img {
@@ -3214,7 +3214,7 @@ background-color: #A12831;
 }
 .mensaje {
     margin-top: 10em;
-    background-color: var(--prim-sombra3);
+    background-color: var(--acento-luz);
     width: 25em;
     height: 20em;
     border-radius: 8px;
@@ -3256,7 +3256,7 @@ background-color: #A12831;
     border: solid 3px var(--acento-luz);
     border-radius: 6px;
     color: var(--acento-luz);
-    background-color: var(--prim-sombra3);
+    background-color: var(--acento-luz);
 }
 
 .menusjuego {
@@ -3267,7 +3267,7 @@ background-color: #A12831;
 
 
 .elegirpersonajes{
-    background-image: url('../imgs/MIBfondo/fondoespacialimg.webp');
+    background-color: #261818;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -3279,12 +3279,12 @@ background-color: #A12831;
 }
 
 .tablerojuego{
-    background-image: url('../imgs/MIBfondo/fondoespacialimg.webp');
+    background-color: #271010;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 32em;
-    margin-top:200px;
+    height: 30em;
+    margin-top:100px;
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -3343,6 +3343,26 @@ background-color: #A12831;
 .imgfichas {
     margin: 0 2em; /* Añade espacio entre las imágenes */
 }
+.imgfichas img {
+    border-radius: 50%;
+    
+}
+.img4enlinea{
+ display: flex;
+ justify-content: space-between;
+ padding-left: 15px;
+ padding-right: 15px;
+ flex-direction: column;
+ padding-top: 10px;
+    
+}
+.img4enlinea img{
+display: flex;
+ width: 150px;   
+ height: 150px;
+ justify-content: space-between;
+    
+}
 
 .elegirtableros {
     width: 90%;
@@ -3373,7 +3393,7 @@ background-color: #A12831;
     margin-top: 3.2em;
 }
 .contenedortitulo{
-    width: 50%;
+    width: 100%;
 }
 .divflex {
     width: 100%;
@@ -3385,9 +3405,8 @@ background-color: #A12831;
 
 .divbackground {
     display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.3);  
-    height: 32em;
+    flex-direction: column; 
+    height: 40em;
     justify-content: center;
     align-items: center;
     margin-bottom: 1em;
@@ -3401,15 +3420,15 @@ background-color: #A12831;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 12em; 
+    margin-left: 6em; 
+    height: 450px;
 
 }
 .divFormMinutos {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    
+    flex-direction: column;   
     margin-top: 1em;
     margin-bottom: 8em;
 }
@@ -3434,7 +3453,6 @@ background-color: #A12831;
 
 .resaltado{
     color: white;
-    text-shadow: 1px 1px 2px var(--acento-luz), 0 0 1em var(--acento), 0 0 0.2em var(--prim-luz2);
 }
 .btnpausar{
     display: flex;
@@ -3442,8 +3460,7 @@ background-color: #A12831;
     justify-content: space-evenly;
     border-radius: 8px;
     width: 9em;
-    background-color: var(--prim-luz3);
-    border: solid 3px var(--prim-sombra3);
+    background-color: var(--acento-luz);
     height: 2.8em;
 }
 
