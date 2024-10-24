@@ -3193,7 +3193,7 @@ background-color: #A12831;
 
 .juegoColocado {
     width: 100%;
-    background-color: #261818;
+    
     display: flex;
     justify-content: center;
     flex-direction: column;
