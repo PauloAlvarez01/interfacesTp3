@@ -3291,9 +3291,9 @@ background-color: #A12831;
     height: 2.30rem;
     justify-content: center;
     align-items: center;
-    border: solid 3px var(--acento-luz);
+
     border-radius: 6px;
-    color: var(--acento-luz);
+    color: var(--blanco);
     background-color: var(--acento-luz);
 }
 
@@ -3449,9 +3449,7 @@ display: flex;
     align-items: center;
     margin-bottom: 1em;
 }
-.resaltadoblur{
-    box-shadow: 1px 0px 15px rgba(0, 0, 0, 0.8);
-}
+
 
 .divcenter {
     display: flex;
@@ -3459,16 +3457,14 @@ display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 6em; 
-    height: 450px;
+    height: 350px;
 
 }
 .divFormMinutos {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;   
-    margin-top: 1em;
-    margin-bottom: 8em;
+    flex-direction: column; 
 }
 .divFormMinutos form{
     display: flex;
@@ -3480,12 +3476,12 @@ display: flex;
     margin-top: 0.25em;
     height: 2.5em;
     margin-bottom: 0.25em;
+    color: #000;
 }
 .btnabsoluto {
-    position: absolute;
     width: 5em; 
     height: 1.8em;
-    bottom: 0.5em;
+    
 }
 
 
@@ -3557,10 +3553,10 @@ display: flex;
 }
 
 .lineablanca {
-    background-color: white;
+    background-color: var(--acento-luz);
     height: 0.15em;
     width: 100%;
     opacity: 0.7;
     /* text-shadow: 1px 1px 2px var(--acento-luz), 0 0 1em var(--acento), 0 0 0.2em var(--prim-luz2); */
-    box-shadow: 0px 0px 2px 1px var(--acento-luz);
+    box-shadow: 0px 0px 2px 1px var(--);
 }

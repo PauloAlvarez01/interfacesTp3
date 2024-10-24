@@ -985,12 +985,18 @@ function showMensaje(){
     divGanador.classList.add("divGanador");
     mensajeGanador.classList.remove("hidden");
     mensajeGanador.classList.add("textoGanador");
+    // Crear el audio y establecer la ruta del archivo
+    const musicaVictoria = new Audio('videos/pacman-music.mp3');
+    const musicaEmpate = new Audio('videos/pacman-dies.mp3');
     if (!empato){
         mensajeGanador.innerHTML += "Gano el " + lastClicked.getNombreJugador();
+         // Reproducir la música si alguien ganó
+         musicaVictoria.play();
     }
     else {
         mensajeGanador.innerHTML += "Empate";
         empato = false;
+        musicaEmpate.play();
     }
     botonReset.addEventListener('click', function(){
         opacidad.classList.add("hidden");
@@ -998,6 +1004,12 @@ function showMensaje(){
         divGanador.classList.remove("divGanador");
         mensajeGanador.classList.add("hidden");
         reset();
+   
+        // Detener la música al hacer reset, si está sonando
+        musicaVictoria.pause();
+        musicaEmpate.pause();  // Detener la música de empate
+        musicaVictoria.currentTime = 0;  // Reiniciar la música de victoria
+        musicaEmpate.currentTime = 0;    // Reiniciar la música de empate
     })
 
 }
