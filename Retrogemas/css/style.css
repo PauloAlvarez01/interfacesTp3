@@ -1817,12 +1817,14 @@ li:hover {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    opacity: 30%;
 }
 
 .btn-right img {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    opacity: 30%;
 }
 
 .btn-left {
@@ -3416,12 +3418,13 @@ display: flex;
     align-items:center ;
 }
 
-
+/*
 .img {
     width: 18em;
     height: 12em;
     margin-left: 1em;
 }
+    */
 .tituloh2 {
     font-size: larger;
     text-align: center;

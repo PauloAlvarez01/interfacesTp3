@@ -84,11 +84,11 @@ let segundoValor = null;
 let imagenesficha = document.querySelectorAll("#imgFicha");
 let elegirpersonajes = document.querySelector("#elegirpersonajes");
 
-let rutajug1 = "imgs/fichas/men.png";  //imagenes por defecto
-let rutajug2= "imgs/fichas/CirculoAlien1.png";  //imagenes por defecto
+let rutajug1 = "imgs/fichas/pacman1.png";  //imagenes por defecto
+let rutajug2= "imgs/fichas/fantasmita1.png";  //imagenes por defecto
 //imagen de tablero
 
-let rutaTablero = "imgs/MIBfondo/mib.jpg";
+let rutaTablero = "imgs/fondo/fondo.jpg";
 
 // let colorCanvas = "#805130";
 let colorCanvas = "#261818";

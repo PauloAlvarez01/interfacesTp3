@@ -1756,12 +1756,20 @@ li:hover {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    opacity: 30%;
+}
+.btn-left img:hover {
+    opacity: 70%;
+}
+.btn-right img:hover {
+    opacity: 70%;
 }
 
 .btn-right img {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    opacity: 30%;
 }
 
 .btn-left {
@@ -1827,12 +1835,20 @@ li:hover {
 .btn-left-cards img {
     width: 100%;
     border-radius: 50%;
+    opacity: 30%;
 }
 
 .btn-right-cards img{
    width: 100%;
    border-radius: 50%;
+   opacity: 30%;
 }
+.btn-right-cards img:hover{
+    opacity: 70%;
+}
+.btn-left-cards img:hover{
+    opacity: 70%;
+ }
 
 
 /* botones posicion */
