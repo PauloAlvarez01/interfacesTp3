@@ -418,6 +418,20 @@ main {
     size: 20px;
    
 }
+.show-password-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.show-password-label input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
 .retrogemas h1{
     text-align: left;
     color: #E63946;
@@ -489,6 +503,9 @@ button a {
     color: var(--blanco);
     width: auto;
     height: 1.3125rem;
+}
+label{
+    color: var(--blanco);
 }
 .lineaingresar {
     display: inline-block;
@@ -593,6 +610,19 @@ color: 000;
     background-color: var(--acento-luz);
     border-radius: 0.5em;
 }
+.show-password-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.show-password-label input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
 
 .btn-captcha-container button {
     background-color:white;
@@ -2887,13 +2917,17 @@ button {
     margin-left: 1em;
     width: 400px;
     height: 300px;
-    background-color: #746464;
+ 
     border-radius: 2%;
     padding: 4%;
     margin-top: 2px;
 }
 .form-inicio label{
     color:var(--blanco);
+}
+
+.emailInput{
+    padding-bottom: 20px;
 }
 
 .retrogema-logo-inicio{
@@ -2950,8 +2984,9 @@ button {
   }
 .olvidasteContraseña{
     text-decoration: underline;
-    color: #000;
-    padding-bottom: 10px;
+    color: var(--blanco);
+    padding-bottom: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2974,20 +3009,21 @@ button {
 }
 .registro-container{
     background-color:#261818;
-    width: 700px;
-    height: 950px;
+    width: 520px;
+    height: 820px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 .formularioRegistro{
-    background-color: #746464;
+    background-color:#3B3131;
+    border: #000 1px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     width: 389px;
-    height: 650px;
+    height: 680px;
     padding-left: 10px;
   }
   .tituloRegistrate{
@@ -3143,30 +3179,35 @@ background-color: #A12831;
 /*popup*/
 .popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo semitransparente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el popup */
+    width: 35vw; /* Tamaño más pequeño */
+    height: 10vh;
+    background-color: var(--prim); /* Color de fondo */
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; /* Asegúrate de que esté encima de otros elementos */
+    z-index: 9999; /* se asegura de que esté encima de otros elementos */
+    padding: 0; /* Sin padding adicional */
+    border-radius: 20px; /* Redondea bordes del popup */
 }
 
 /* Estilos del contenido del popup */
 .popup-content {
-    background-color: black;
+    background-color: var(--acentonuevo);
+    opacity: 0.8;
     color: var(--blanco);
     font-size: 18px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 5px;
-    max-width: 90vw; /* Ancho máximo relativo a la pantalla */
-    max-height: 90vh; /* Alto máximo relativo a la pantalla */
-    justify-content: center;
+    width: 100%; /* Ocupa todo el ancho del popup */
+    height: 100%; /* Ocupa todo el alto del popup */
     text-align: center;
-    overflow: auto; /* Añade scroll si el contenido excede el tamaño */
+    box-sizing: border-box; /* Incluye padding dentro de width y height */
 }
+
+
 #popup-success {
     background-color: #e0f7e0;
     border: 1px solid #28a745;
@@ -3175,8 +3216,8 @@ background-color: #A12831;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 10px;
     position: fixed;
     top: 20px;
     right: 20px;

@@ -768,9 +768,6 @@ function setearPosicion(nueva, col, fila) {
     }, intervalo);
 }
 
-
-
-
 //limpia el canvas y vuelve a dibujar el tablero y todas las fichas
 function limpiarTodoCanvas(){
     clearCanvas();
