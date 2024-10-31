@@ -204,6 +204,11 @@ button {
 .footerhome div ul {
     display: none;
 }
+
+.footerhome{
+    padding-left: 5%;
+}
+
 .footerhome div ul.show {
     display: block;
     color: var(--blanco);
@@ -698,6 +703,7 @@ a.colorblanco{
 /* Seccion Juego */
 
 .main-game-container {
+    max-width: 1340px;
     width: 100%;
     height: auto;
     background-color: #271010;  /* Variable: acento v3*/
@@ -881,8 +887,8 @@ li:hover {
 }
 
 .imgsGameJuego img {
-    width: 23%;
-    height: 12.63019em;
+    width: 23.5%;
+    height: 10em;
 }
 .videosJuego {
     margin-top: 10px;
@@ -1190,6 +1196,7 @@ li:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 1em;
+    padding-left: 2%;
 }
 
 .cj1Reseña img {
@@ -1240,6 +1247,7 @@ li:hover {
     text-align: left;
     display: flex;
     justify-content: center;
+    padding-left: 2%;
 }
 
 .cj2Reseña p {
@@ -2260,6 +2268,10 @@ button {
 
 /* nav responsive */
 
+.navheader{
+    max-width: 1340px;  
+}
+
 .primariosombra2{
     background-color: rgba(57, 49, 49, 1);
 }
@@ -2356,6 +2368,7 @@ button {
 /*footer responsive*/
 
 .footerhome{
+    max-width: 1340px;
     display: flex;
     flex-direction: row;
     height: 12em;
