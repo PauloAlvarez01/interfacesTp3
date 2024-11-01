@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@100;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@100&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -59,6 +58,9 @@ button {
     width: 80%;
     height: 50%;
 }
+.hamburguer-menu{
+    width: 15%;
+}
 
 .hamburguer-menu button{
     margin-left: 1em;
@@ -67,8 +69,8 @@ button {
 }
 
 #imgburguer {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1rem;
+    height: 1rem;
 }
 .logoretrogemas{
     width: 80%;
@@ -80,6 +82,7 @@ button {
     display: flex;
     align-items: center;
 }
+
 .titulo {
     display: flex;
     align-items: center;
@@ -96,8 +99,9 @@ button {
     padding-right: 1em;
     padding-left: 0.5em;
 }
+
 .buscarnav{
-    width: 30%;
+    width: 0%;
     display: flex;
     align-items: center;
     text-align: right;
@@ -107,9 +111,7 @@ button {
     width: 100%;
     display: flex;
     width: 75%;
-      
 }
-
 
 .carritoDesplegado{
     padding: 0.1em;
@@ -117,6 +119,7 @@ button {
     height: auto;
     background-color: var(--prim-sombra3);
     position: absolute;
+    
     top: 7.5%;
     display: flex;
     z-index: 3;
@@ -130,9 +133,10 @@ button {
 
 .carrito button {
 
-    width: 1.5em;
-    height: 1.5em;
+    width: 1em;
+    height: 1em;
     border: 0;
+    justify-content: right;
 }
 
 
@@ -144,7 +148,6 @@ button {
     width: 50%;
     height: 50%;
     text-align: right;
-    
 }
 
 .perfil button{
@@ -166,13 +169,12 @@ button {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgba(57, 49, 49, 1);;
+    background-color: rgba(57, 49, 49, 1);
     width: auto;
 }
 
 .footerhome button {
     text-align: left;
-    margin: 1em 0 1.5em 1.2em;
     display: flex;
     align-items: center;
     border: 0;
@@ -183,19 +185,35 @@ button {
 }
 
 /* desplegables footer */
+.btnfooter button li{
+    font-size: 8px;
+    color: var(--blanco);
+}
+.btnfooter{
+    font-size: 8px;
+    color: var(--blanco);
+}
 .footerulhidden {
     display: none;
 }
-
+.footerulhidden li a{
+    font-size: 8px;
+    color: var(--blanco);
+    text-decoration: none;
+}
 .footerhome div ul {
     display: none;
 }
 
+.footerhome{
+    padding-left: 5%;
+}
+
 .footerhome div ul.show {
     display: block;
-    font-size: 0.7em;
+    color: var(--blanco);
+    font-size: 8px;
     margin-left: 1.5em;
-    margin-bottom: 2em;
     list-style: none;
 }
 
@@ -205,6 +223,7 @@ button {
 
 .footerhome div ul li {
     margin-bottom: 0.5em;
+    color: var(--blanco);
 }
 
 
@@ -225,7 +244,8 @@ button {
     border-radius: 0.2em;
     justify-content: center;
 }
-.main {
+main {
+    width:100%;
     height: 100%;
     overflow: hidden; 
     background-color: #261818;
@@ -248,7 +268,7 @@ button {
 .imgcardsresponsive {
     margin: 0.25em; 
     width: 5.25em;
-    height: 5em;
+    height: 6em;
 }
 .carrusel {
     display: flex;
@@ -274,6 +294,9 @@ button {
     margin-left: 1.50em;
     margin-top: 0.50em;
     margin-bottom: 0.50em;
+}
+.h2 h2 {
+    font-size:10px;
 }
 .h3 {
     font-size: 10px;
@@ -307,6 +330,7 @@ button {
 
 .añadiralcarro p, .añadiralcarro button {
     margin-left: 0.50em;
+    font-size: 8px;
 }
 
 .jugar button, .btnañadiralcarro, .btnsacardelcarro {
@@ -323,6 +347,9 @@ button {
 }
 .btnsacardelcarro{
     width: 6.8em;
+}
+.sacardelcarro button{
+    font-size: 8px;
 }
 
 .hidden {
@@ -373,6 +400,9 @@ button {
     background-color: #374957;
     margin-right: 1em;
 }
+.gratis p{
+    font-size: 8px;
+}
 
 .jugargratis {
     display: flex;
@@ -380,6 +410,10 @@ button {
     justify-content: center;
     margin-top: 0.5em;
 }
+.jugar p{
+   font-size: 8px;
+}
+
 
 
 /*  Seccion Formulario Registro */
@@ -389,6 +423,20 @@ button {
     size: 20px;
    
 }
+.show-password-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.show-password-label input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
 .retrogemas h1{
     text-align: left;
     color: #E63946;
@@ -400,6 +448,7 @@ button a {
     color: var(--blanco);
     font-size: 20px;
 }
+
 
 
 .btn-google-container img {
@@ -418,6 +467,8 @@ button a {
     width: 25.65em;
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin-left: 1em;
 }
@@ -457,6 +508,9 @@ button a {
     color: var(--blanco);
     width: auto;
     height: 1.3125rem;
+}
+label{
+    color: var(--blanco);
 }
 .lineaingresar {
     display: inline-block;
@@ -558,9 +612,23 @@ color: 000;
     display: flex;
     width: 270px;
     height:54px;
-    background-color: var(--acento);
+    background-color: var(--acento-luz);
     border-radius: 0.5em;
 }
+.show-password-label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.show-password-label input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
 .btn-captcha-container button {
     background-color:white;
     margin-left: 3em;
@@ -568,7 +636,6 @@ color: 000;
 
 .colorblanco {
     color: var(--blanco);
-    font-size: 12px;
 }
 a.colorblanco{
     text-decoration:underline;
@@ -577,9 +644,11 @@ a.colorblanco{
 .btn-registrarse-container button {
     width: 9.9375rem;
     height: 2.8125rem;
-    background-color: var(--acento--);
+    background-color: var(--acento-luz);
     border: 0;
+    color: var(--blanco);
 }
+
 
 .h4 {
     font-size: 10px;
@@ -634,16 +703,17 @@ a.colorblanco{
 /* Seccion Juego */
 
 .main-game-container {
+    max-width: 1340px;
     width: 100%;
     height: auto;
     background-color: #271010;  /* Variable: acento v3*/
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content:center;
 }
 
 .sub-container {
-    width: 99%;
+    width: 90%;
     height: auto;
     background-size: cover;
     display: flex;
@@ -652,7 +722,7 @@ a.colorblanco{
 }
 
 .sub-sub-container {
-    width: 95%;
+    width: 90%;
 }
 
 
@@ -730,6 +800,7 @@ a.colorblanco{
 
 .game-container {
     margin-top: 0.7em;
+    height: 26em;
     position: relative;
 }
 
@@ -741,45 +812,46 @@ li:hover {
     color: var(--prim);
 }
 
-.juegoColocado {
-    
-    width: 100%;
-    height: 50%;
+.publicidad{
+    width: 30%;
+    height: 350px;
     display: flex;
-    justify-content: center;
     padding-bottom: 10px;
-    
 }
 
-
-
-.game-container img {
+.publicidad-img{
     width: 100%;
     height: 100%;
     object-fit: fill;
 }
 
+.game-container img {
+    width: 50%;
+    height: 100%;
+    object-fit: fill;
+}
+
 .info-game {
-    margin-top: 10px;
+    margin-top: 2em;
     height: auto;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     margin-bottom: 2em;
     width: 100%;
     background-color: #271010;
 }
 
 .deQueTrata {
-    text-align: left;
-    width: 95%;
+    text-align: center;
+    padding-top: 2em;
+    width: 92%;
 }
 
 .descripcion {
-    padding-top: 10px;
+    padding-top: 2em;
 }
 
-.descripcion ol {
-    list-style-position: inside;
+.descripcion p {
     display: inline-block;
     width: 100%;
     font-size: 1.125em;
@@ -787,24 +859,61 @@ li:hover {
     font-weight: 400;
     line-height: normal;
     text-align: left;
-    color: white;
+    color: var(--blanco);
 }
 
-.deQueTrata h3 {
-    font-family: Roboto;
+.deQueTrata h1 {
+    font-family: Poppins;
     font-size: 2rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    color: white;
+    color: var(--blanco);
 }
 
 .deQueTrata .imgsGame {
     display: flex;
-    margin-top: 10px;
+    margin-top: 2.5em;
     width: 100%;
     justify-content: space-between;
 
+}
+
+.imgsGameJuego {
+    margin-top: 10px;
+    width: 60em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imgsGameJuego img {
+    width: 23.5%;
+    height: 10em;
+}
+.videosJuego {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.videosJuego video {
+    width: 45%;
+    height: 19.79169em;
+}
+
+.MomentosIncreiblesJuego {
+    margin-top: 5em;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+.MomentosIncreiblesJuego h1 {
+    font-family: Roboto;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--blanco);
 }
 
 
@@ -853,9 +962,8 @@ li:hover {
 }
 
 .imgsRedes img {
-    width: 45%;
-    height: 5em;
-    
+    width: 30%;
+    height: 3em;   
 }
 
 .links {
@@ -871,12 +979,16 @@ li:hover {
 
 .listaLinks {
     width: 100%;
-      
-
+}
+.listaLinks li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--blanco);
 }
 
+
 .community-section {
-    height: 72.4em;
+    height: 65em;
 }
 
 .lineacomentarios {
@@ -889,8 +1001,6 @@ li:hover {
     width: 100%;
     display: flex;
     justify-content:left;
-    
-    
 }
 
 .ult-coment-titulo h2 {
@@ -907,9 +1017,8 @@ li:hover {
     width: auto;
     justify-content: space-between;
     align-items: center;
+    padding-top: 4%;
 }
-
-
 
 .dejaTuComentario {
     display: flex;
@@ -959,6 +1068,8 @@ li:hover {
 
 .inputReseña {
     margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .inputReseña input {
@@ -996,9 +1107,10 @@ li:hover {
 
 .btn-comment {
     display: flex;
-    justify-content: center;
+    justify-content:right;
     margin-top: 0.5em;
     margin-bottom: 2.1em;
+    padding-right: 2%;
 }
 
 .btn-comment button {
@@ -1038,7 +1150,7 @@ li:hover {
 
 .inputReseña {
     width: 100%;
-    height: 8.89863rem;
+    height: 12rem;
     background-color: rgba(57, 49, 49, 1);
     margin-top: 1em;
     display: flex;
@@ -1084,6 +1196,7 @@ li:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 1em;
+    padding-left: 2%;
 }
 
 .cj1Reseña img {
@@ -1134,6 +1247,7 @@ li:hover {
     text-align: left;
     display: flex;
     justify-content: center;
+    padding-left: 2%;
 }
 
 .cj2Reseña p {
@@ -1146,23 +1260,6 @@ li:hover {
     padding: 2%;
 }
 
-.publicidad {
-    width: 50%;
-    height: 38.8em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.publicidad img:first-child {
-    width:  75%;
-    height: 12.67575rem;
-}
-
-.publicidad img:last-child {
-    width:  75%;
-    height: 26.1875rem;
-}
 
 /* Menus compartir y ayuda desplegables */
 
@@ -1376,7 +1473,6 @@ li:hover {
     color: var(--blanco);
 }
 
-
 /* loader */
 
 .all {
@@ -1443,9 +1539,9 @@ li:hover {
       padding: 0.1em;
       width: auto;
       height: auto;
-      background-color: var(--prim-sombra3);
+      background-color: rgba(57, 49, 49, 1);
       position: absolute;
-      top: 7.5%;
+      top: 3.5rem;
       display: flex;
       z-index: 3;
       color: var(--blanco);
@@ -1459,7 +1555,7 @@ li:hover {
 .carritoDesplegado.show {
 
     /* left: 15.8em; */
-    right: 15%;
+    right: 8%;
 } 
 
 
@@ -1470,17 +1566,24 @@ li:hover {
 
 
 .perfilDesplegado.show ul, .carritoDesplegado.show ul, .hamburguer-menu-desplegado.show ul {
-    font-size: small;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    font-size: 8px;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     padding-left: 0.5em;
     list-style: none;
 }
 
-.perfilDesplegado.show ul a, .carritoDesplegado.show ul a, .hamburguer-menu-desplegado.show ul a {
+.perfilDesplegado.show li, .carritoDesplegado.show li , .hamburguer-menu-desplegado.show li {
+    text-decoration: none;
+    color: var(--blanco);
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+}
+.perfilDesplegado.show li a {
     text-decoration: none;
     color: var(--blanco);
 }
+
 
 .perfilDesplegado.show ul a:hover, .carritoDesplegado.show ul a:hover, .hamburguer-menu-desplegado.show ul a:hover {
     text-decoration: none;
@@ -1671,8 +1774,6 @@ li:hover {
 /* cuarto hover boton */
 
 .cuarto-hover-boton {
-
-
     border-radius: 3px; /* redondear bordes */
     position: relative;
     z-index: 1;
@@ -1680,17 +1781,17 @@ li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    font-size: 8px;
+}
 
-  .cuarto-hover-boton:hover {
+.cuarto-hover-boton:hover {
     color: #fff;/* color de fuente hover */
-  }
+}
 .cuarto-hover-boton::after {
     content: "";
     background: var(--acento-luz); /* color de fondo hover */
     position: absolute;
     z-index: -1;
-
     display: block;
     left: 0;
     right: 0;
@@ -1709,7 +1810,7 @@ li:hover {
 
   .container-carousel {
     position: relative;
-    width: auto;
+    width: 100%;
     height: 15em;
     background-color:#261818;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
@@ -1720,11 +1821,10 @@ li:hover {
     width: 1000%;
     height: 100%;
     display: flex;
-
 }
 
 .slider-section {
-    width: calc(100% / 3);
+    width: calc(100%/4);
     height: 100%;
 }
 
@@ -1758,12 +1858,6 @@ li:hover {
     border-radius: 50%;
     opacity: 30%;
 }
-.btn-left img:hover {
-    opacity: 70%;
-}
-.btn-right img:hover {
-    opacity: 70%;
-}
 
 .btn-right img {
     width: 1em;
@@ -1780,20 +1874,15 @@ li:hover {
     right: 0.1em;
 }
 
-
-
-
-
-
-
 /* carrusel cards celular*/
 
 .card h3 {
     margin-left: 0.50em;
     height: auto;
 }
-
-
+.jugar a {
+   font-size: 8px;
+}
 
 .carruselprincipal {
     display: flex;
@@ -1806,7 +1895,7 @@ li:hover {
 }
 
 .h2 {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 .cincocards {
@@ -1819,36 +1908,28 @@ li:hover {
     position: absolute;
     z-index: 100;
     left: 0em;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 
 .btn-right-cards{
     position: absolute;
     z-index: 100;
     right: 1em;
-    width: 2em;
-    height: 2em;
+    width: 1em;
+    height: 1em;
 }
 
 
 .btn-left-cards img {
     width: 100%;
     border-radius: 50%;
-    opacity: 30%;
 }
 
 .btn-right-cards img{
    width: 100%;
    border-radius: 50%;
-   opacity: 30%;
 }
-.btn-right-cards img:hover{
-    opacity: 70%;
-}
-.btn-left-cards img:hover{
-    opacity: 70%;
- }
 
 
 /* botones posicion */
@@ -1876,12 +1957,12 @@ li:hover {
 .transformacion-izquierda {
     transform: translateX(0%) skew(-5deg);
     transition: transform 0.5s ease;
-  }
+}
   
-  .transformacion-derecha {
+.transformacion-derecha {
     transform: translateX(-100%) skew(5deg);
     transition: transform 0.5s ease;
-  }
+}
   
   .transformacion-reset {
     transform: translateX(0%) skewX(0deg);
@@ -1894,11 +1975,8 @@ li:hover {
   }
 
 
-
 @media only screen and (min-width: 1024px) {
     
-
-
 /* carrusel cards */
 
 .card h3 {
@@ -1915,9 +1993,6 @@ li:hover {
     margin-top: 1em;
     margin-bottom: 1.6em;
 }
-
-
-
 .cincocards {
     display: flex;
     width: 100%;
@@ -1928,16 +2003,16 @@ li:hover {
     position: absolute;
     z-index: 100;
     left: 0em;
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
 }
 
 .btn-right-cards{
     position: absolute;
     z-index: 100;
     right: 1em;
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
 }
 
 
@@ -2015,21 +2090,23 @@ li:hover {
 label {
     color: var(--blanco);
 }
+.slider-section  {
+    width: calc(100%/4);
+    height: 100%;
+}
 
 .slider-section img {
-    width: 85.5em;
-    height: 20em;
-    object-fit: fill;
+    width: 50%;
+    height: 30em;
+    object-fit: cover;
 }
 
 .btn-left {
     left: 0.3em;
-
 }
 
 .btn-right {
     right: 0.3em;
-  
 }
 
 .btn-left img {
@@ -2042,22 +2119,15 @@ label {
     height: 3em;
 }
 
-
-
 /* main */
 
 .main {
     height: 100%;
     width: 100%;
-    max-width: 1340px;
     background-color: #271010;
     background-size: cover;
     overflow: hidden; 
 
-}
-
-.navheader{
-    max-width: 1340px;  
 }
 .carrusel {
     display: flex;
@@ -2095,6 +2165,10 @@ label {
 .slider img {
     width: 100%;
 }
+.carruseles{
+    height: 100%;
+    display: flex;
+}
 
 /* menus desplegados desktop */
 .perfilDesplegado.show {
@@ -2105,7 +2179,6 @@ label {
     /* left: 21.7em; */
     display: flex;
     padding: 0.5em 0.5em 2.5em 1.5em;
-    background-color: rgba(57, 49, 49, 1);
     text-align: left;
     align-items: center;
     opacity: 0.9;
@@ -2129,10 +2202,8 @@ label {
     
 }
 
-
-
 .carritoDesplegado.show {
-    
+    opacity: 0.9;
     width: 8.5rem;
     height: 7rem;
     position: absolute;
@@ -2141,7 +2212,6 @@ label {
     right: 8%;
     display: flex;
     font-size: medium;
-    background-color: rgba(57, 49, 49, 1);
     padding: 0.5em 0.5em 0.5em 0.8em;
     align-items: center;
     text-align: left;
@@ -2197,6 +2267,10 @@ button {
 }
 
 /* nav responsive */
+
+.navheader{
+    max-width: 1340px;  
+}
 
 .primariosombra2{
     background-color: rgba(57, 49, 49, 1);
@@ -2280,11 +2354,6 @@ button {
     height: 3em;
 }
 
-.perfil {
-    width: auto;
-    
-}
-
 .perfil button{
     width: 4rem;
     height: 3.6875rem;
@@ -2299,7 +2368,7 @@ button {
 /*footer responsive*/
 
 .footerhome{
-    max-width: 1340px;
+    
     display: flex;
     flex-direction: row;
     height: 12em;
@@ -2398,7 +2467,7 @@ button {
 
 .gratis p {
     text-align: center;
-    
+    padding-left: 0.2em;
 }
 
 .gratis p, .jugar button, .btnañadiralcarro, .sacardelcarro button {
@@ -2498,7 +2567,7 @@ button {
 }
 .h2 {
     margin-left: 1em;
-    font-size: 14px;
+    font-size: 22px;
 }
 }
 
@@ -2654,7 +2723,7 @@ button {
 .register{
     background-image: url(../asset/images/fondo.png);
     background-size:cover;
-    width: 1440px;
+    width: auto;
     height: 832px;
     display: flex;
     padding-top: 5%;
@@ -2805,26 +2874,25 @@ button {
 .btn-registrate-container button, .btn-inisesion-container button {
     width: 345px;
     height: 54px;
-    background-color:#E63946;
+    background-color: #E63946;
     border-radius: 1em;
     border: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-    color: #000;
+    color: var(--blanco);
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Transición suave para todos los cambios */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave por defecto */
+    cursor: pointer;
 }
 .btn-inisesion-container button:hover, .btn-registrate-container button:hover {
-    background-color: #A12831;
-    width: 345px;
-    height: 54px;
-    border-radius: 1em;
-    border: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: normal;
-    color: #000;
+    background-color: #D62839; /* Cambia a un rojo un poco más oscuro */
+    color: #FFFBEA; /* Cambia el color del texto ligeramente */
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente al hacer hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
   }
 
 .imgIconos {
@@ -2834,7 +2902,7 @@ button {
 }
 /* iniciar sesion */
 .inicio-container{
-    width: 1440px;
+    width: 100%;
     height: 700px;
     display: flex;
     background-image: url(../asset/images/fondo.png);
@@ -2862,13 +2930,17 @@ button {
     margin-left: 1em;
     width: 400px;
     height: 300px;
-    background-color: #746464;
+ 
     border-radius: 2%;
     padding: 4%;
     margin-top: 2px;
 }
 .form-inicio label{
-    color:#000;
+    color:var(--blanco);
+}
+
+.emailInput{
+    padding-bottom: 20px;
 }
 
 .retrogema-logo-inicio{
@@ -2882,7 +2954,6 @@ button {
 .inputForm {
     margin-top: 0em;
     width: 370px;
-    height: 54px;
     border-radius: 1em;
     background-color: white;
     border: 1px solid var(--blanco-oscuro);
@@ -2907,7 +2978,7 @@ button {
     font-style: normal;
     font-size: 15px;
     margin-bottom: 1.5em;
-    color: #000;
+    color: var(--blanco);
 
 }
 .btn-inises-container button:hover {
@@ -2920,14 +2991,15 @@ button {
     align-items: center;
     justify-content: center;
     font-family: Roboto;
-    font-size: 15px;
+    font-size: normal;
     margin-bottom: 1.5em;
-    color: #000;
+    color: var(--blanco);
   }
 .olvidasteContraseña{
     text-decoration: underline;
-    color: #000;
-    padding-bottom: 10px;
+    color: var(--blanco);
+    padding-bottom: 20px;
+    padding-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -2950,20 +3022,21 @@ button {
 }
 .registro-container{
     background-color:#261818;
-    width: 700px;
-    height: 950px;
+    width: 520px;
+    height: 820px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 .formularioRegistro{
-    background-color: #746464;
+    background-color:#3B3131;
+    border: #000 1px;
     display: flex;
     flex-direction: column;
     justify-content:center;
     width: 389px;
-    height: 650px;
+    height: 680px;
     padding-left: 10px;
   }
   .tituloRegistrate{
@@ -2978,6 +3051,7 @@ button {
   display: flex;
   padding-bottom: 20px;
   font-size: 25px;
+  color: var(--blanco);
 }
   #fname {
     width: 175px;
@@ -3024,7 +3098,7 @@ button {
   }
   .obligatorio{
     text-align: left;
-    color:#FB2020;
+    color:var(--blanco);
     font-size: 18px;
   }
   .btn-captcha-container{
@@ -3060,9 +3134,10 @@ button {
     margin-top: 2px;
 }
 .texto {
-    color: white;
+    color: black;
     font-size: robotic;
 }
+
 .diverror {
     background-color: red;
 }
@@ -3104,4 +3179,469 @@ background-color: #A12831;
     justify-content:center;
     padding-left:8px;
     padding-bottom: 30px;   
+}
+.links {
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--blanco);
+    list-style: none;
+    text-align: left;
+   
+}
+/*popup*/
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el popup */
+    width: 35vw; /* Tamaño más pequeño */
+    height: 10vh;
+    background-color: var(--prim); /* Color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* se asegura de que esté encima de otros elementos */
+    padding: 0; /* Sin padding adicional */
+    border-radius: 20px; /* Redondea bordes del popup */
+}
+
+/* Estilos del contenido del popup */
+.popup-content {
+    background-color: var(--acentonuevo);
+    opacity: 0.8;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%; /* Ocupa todo el ancho del popup */
+    height: 100%; /* Ocupa todo el alto del popup */
+    text-align: center;
+    box-sizing: border-box; /* Incluye padding dentro de width y height */
+}
+
+
+#popup-success {
+    background-color: #e0f7e0;
+    border: 1px solid #28a745;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 10px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.check-icon {
+    font-size: 1.5em;
+    color: #28a745;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Botón de cerrar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+}
+.popup-message{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 50px;
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Ocultar el pop-up */
+.hidden {
+    display: none;
+}
+.diverror{
+    width: 500px;
+    height: 100px;
+}
+
+
+.juegoColocado {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.imgfondo {
+    width: 100%;
+    height: 100%;   
+}
+.h1 {
+    margin-top: 1em;
+    text-align: center;
+}
+
+.timer {
+    margin-top: 8em;
+    height: 2.40em;
+    background-color: var(--acento);
+    width: 24em;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    border-radius: 6px;
+    position: absolute;
+    top: -10.5em;
+    right: 15.5em;
+    box-shadow: 1px 0px 5px var(--acento-luz);
+}
+.timer p {
+    font-size: 28px;
+    color: var(--blanco);
+    display: inline-block; /*se ajusta al contenido del parrafo*/
+    width: 4em;
+    height: 2.30rem;
+    background-color: var(--acento-luz);
+    border-radius: 6px;
+}
+
+.resetButton {
+    display: flex;
+    align-items: center;
+    width: 9em;
+    height: 2.30rem;
+    background-color: var(--acento-luz);
+    color: var(--blanco);
+    border-radius: 8px;
+}
+
+.resetButton img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.25em;
+}
+.mensaje {
+    margin-top: 10em;
+    background-color: var(--acento-luz);
+    width: 25em;
+    height: 20em;
+    border-radius: 8px;
+    position:absolute;
+    top:-2.7em;
+    right: 20em;
+    box-shadow: 1px 0px 5px var(--prim-sombra3);
+}
+.mensaje p {
+    text-align: center;
+    font-size: 24px;
+}
+.mensaje div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+}
+.mensajediv {
+    padding-top: 2em;
+}
+.btn-danger {
+    display: flex;
+    width: 9em;
+    height: 2.30rem;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px var(--error);
+    border-radius: 6px;
+    color: var(--error);
+    background-color: var(--prim-sombra3);
+}
+
+.btn-sucess {
+    display: flex;
+    width: 9em;
+    height: 2.30rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6px;
+    color: var(--blanco);
+    background-color: var(--acento-luz);
+}
+
+.menusjuego {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+
+.elegirpersonajes{
+    background-color: #261818;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 32em;
+    margin-top:200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.tablerojuego{
+    background-color: #271010;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30em;
+    margin-top:100px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    
+}
+
+.modosJuego {
+    bottom: -7em;
+    height: 528px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.column{
+    display: flex;
+    flex-direction: row;
+}
+.hiddendos {
+    display: none;
+    position: absolute;
+}
+.elegirpersonajes div {
+    display: flex; 
+    justify-content: center; 
+    margin-top: 1em; 
+}
+
+.elegirpersonajes img {
+    width: 5em;
+}
+
+.elegirJugador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.elegirJugadordiv{
+    display: flex;
+    flex-direction: row;
+}
+
+.fichasElegir {
+    position: absolute;
+    bottom: -6.85em;
+    height: 528px;
+}
+
+.margendiv{
+    margin:0;
+} 
+
+.imgfichas {
+    margin: 0 2em; /* Añade espacio entre las imágenes */
+}
+.imgfichas img {
+    border-radius: 50%;
+    
+}
+.img4enlinea{
+ display: flex;
+ justify-content: space-between;
+ padding-left: 15px;
+ padding-right: 15px;
+ flex-direction: column;
+ padding-top: 10px;
+    
+}
+.img4enlinea img{
+display: flex;
+ width: 150px;   
+ height: 150px;
+ justify-content: space-between;
+    
+}
+
+.elegirtableros {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elegirtableros div {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items:center ;
+}
+
+/*
+.img {
+    width: 18em;
+    height: 12em;
+    margin-left: 1em;
+}
+    */
+.tituloh2 {
+    font-size: larger;
+    text-align: center;
+}
+.tituloh1 {
+    font-size: 28px;
+    margin-top: 3.2em;
+}
+.contenedortitulo{
+    width: 100%;
+}
+.divflex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 2em;
+}
+
+.divbackground {
+    display: flex;
+    flex-direction: column; 
+    height: 40em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+
+.divcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6em; 
+    height: 350px;
+
+}
+.divFormMinutos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.divFormMinutos form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.inputMinutos{
+    margin-top: 0.25em;
+    height: 2.5em;
+    margin-bottom: 0.25em;
+    color: #000;
+}
+.btnabsoluto {
+    width: 5em; 
+    height: 1.8em;
+    
+}
+
+
+.resaltado{
+    color: white;
+}
+.btnpausar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    width: 9em;
+    background-color: var(--acento-luz);
+    height: 2.8em;
+}
+
+.btnpausar img {
+    width: auto;
+    height: auto;
+}
+
+.turno {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top : -2.6em;
+    right: 0;
+    width: 16em;
+    height: 2.8em;
+    text-align: center;
+    justify-content: center;
+}
+
+.turno span {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.divGanador {
+    top:13.3em;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: absolute;
+    height: 8em;
+    left: 21.5em;
+    width: 26em;
+    text-align: center;
+    background-color: var(--prim-sombra2);
+    border-radius: 8px;
+    border: 0.2em solid var(--blanco);
+    box-shadow: 1px 0px 15px var(--acento-luz);
+
+}
+
+.textoGanador {
+
+    color: white;
+    font-size: 30px;
+    text-shadow: 0px 0px 9px var(--acento-luz);
+}
+.opacidad {
+    top: -20em;
+    position: relative;
+    height: 8em;
+    width: auto;
+    background-color: rgba(0, 13, 26, 0.1);   
+}
+
+.lineablanca {
+    background-color: var(--acento-luz);
+    height: 0.15em;
+    width: 100%;
+    opacity: 0.7;
+    /* text-shadow: 1px 1px 2px var(--acento-luz), 0 0 1em var(--acento), 0 0 0.2em var(--prim-luz2); */
+    box-shadow: 0px 0px 2px 1px var(--);
 }
