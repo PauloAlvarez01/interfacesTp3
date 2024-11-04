@@ -229,6 +229,7 @@ button {
     height: 100%;
     overflow: hidden; 
     background-color: #261818;
+    position:relative
 }
 .carruselcompleto {
     width: 100%;
@@ -1855,7 +1856,7 @@ li:hover {
 
 
 .primero {
-    top: 25em;
+    top: 32.5em;
 }
 
 .segundo {
@@ -1892,6 +1893,10 @@ li:hover {
     transform: translateX(-100%) skewX(0deg);
     transition: transform 0.5s ease;
   }
+
+
+
+
 
 
 
@@ -1932,13 +1937,18 @@ li:hover {
     height: 3em;
 }
 
-.btn-right-cards{
+/* Estilo base */
+.btn-right-cards {
     position: absolute;
     z-index: 100;
     right: 1em;
     width: 3em;
     height: 3em;
+    transition: transform 0.3s, right 0.3s;
 }
+
+
+
 
 
 .btn-left-cards img {
@@ -1954,20 +1964,21 @@ li:hover {
 
 
 .primero {
-    top: 40em;
+    top: 32.5em; /* Nuevo valor */
 }
 
 .segundo {
-    top: 66em;
+    top: 58.5em; /* 32.5em + 26em */
 }
 
 .tercero {
-    top: 92em;
+    top: 84.5em; /* 58.5em + 26em */
 }
 
 .cuarto {
-    top: 118em;
-} 
+    top: 110.5em; /* 84.5em + 26em */
+}
+ 
 
 
 /* clases animaciones botones izq der carrusel cards */
@@ -2102,7 +2113,7 @@ label {
     height: 16em;
     position: absolute;
     top:  4.8125rem;
-    /* left: 21.7em; */
+    left: 69.85em;
     display: flex;
     padding: 0.5em 0.5em 2.5em 1.5em;
     background-color: rgba(57, 49, 49, 1);
@@ -2137,8 +2148,7 @@ label {
     height: 7rem;
     position: absolute;
     top:  4.8125rem;
-    /* right: 10%; */
-    right: 8%;
+    left: 66em;
     display: flex;
     font-size: medium;
     background-color: rgba(57, 49, 49, 1);

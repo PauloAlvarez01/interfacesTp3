@@ -169,7 +169,7 @@ button {
     display: flex;
     flex-direction: column;
     height: auto;
-    background-color: rgba(57, 49, 49, 1);
+    background-color: rgba(57, 49, 49, 1);;
     width: auto;
 }
 
@@ -840,6 +840,14 @@ li:hover {
     width: 100%;
     background-color: #271010;
 }
+.info-game-Instrucciones{
+    margin-top: 4em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+}
 
 .deQueTrata {
     text-align: center;
@@ -859,6 +867,19 @@ li:hover {
     font-weight: 400;
     line-height: normal;
     text-align: left;
+    color: var(--blanco);
+}
+.descripcionJuego {
+    display: inline-block;
+    width: 100%;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    color: var(--blanco);
+}
+.descripcionJuego :hover {
     color: var(--blanco);
 }
 
@@ -988,7 +1009,7 @@ li:hover {
 
 
 .community-section {
-    height: 65em;
+    /* height: 65em; */
 }
 
 .lineacomentarios {
@@ -1017,7 +1038,8 @@ li:hover {
     width: auto;
     justify-content: space-between;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 5%;
+    font-size: 14px;
 }
 
 .dejaTuComentario {
@@ -1900,6 +1922,7 @@ li:hover {
 
 .cincocards {
     display: flex;
+    justify-content: center;
     width: 100%;
     transition: transform 0.5s ease; /*agrega una transicion suave*/
 }
@@ -1995,6 +2018,7 @@ li:hover {
 }
 .cincocards {
     display: flex;
+    justify-content: center;
     width: 100%;
     transition: transform 0.5s ease; /*agrega una transicion suave*/
 }
@@ -3294,8 +3318,13 @@ background-color: #A12831;
     text-align: center;
 }
 
+#game-container-fix{
+    padding-top: 4em;
+    background-color: rgb(2, 9, 16);
+}
+
 .timer {
-    margin-top: 8em;
+    margin-top: 7em;
     height: 2.40em;
     background-color: var(--acento);
     width: 24em;
@@ -3306,7 +3335,7 @@ background-color: #A12831;
     border-radius: 6px;
     position: absolute;
     top: -10.5em;
-    right: 15.5em;
+    right: 21em;
     box-shadow: 1px 0px 5px var(--acento-luz);
 }
 .timer p {
